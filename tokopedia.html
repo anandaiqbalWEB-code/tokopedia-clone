@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tokopedia.css">
+    <title>Tokopedia Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-header">
+            <div class="top-left">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <span>Gratis Ongkir + Banyak Promo belanja di aplikasi</span>
+            </div>
+
+            <nav class="top-right">
+                <a href="#">Tentang Shop</a>
+                <a href="#">Mulai Berjualan</a>
+                <a href="#">Promo</a>
+                <a href="#">Shop Care</a>
+            </nav>
+        </div>
+
+        <div class="min-header">
+            <div class="logo">
+                <h1>SHOP</h1>
+            </div>
+
+            <div class="kategori">
+                <span>Kategori</span>
+            </div>
+
+            <div class="searchbar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input type="text" placeholder="Cari Produk">
+            </div>
+
+            <div class="icon-menu">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+            <div class="auth">
+                <button>Masuk</button>
+
+                <button>Daftar</button>
+            </div>
+        </div>
+
+        <div class="bottom-header">
+            <div class="location">
+                <i class="fa-solid fa-location-dot"></i>
+
+                <span>Dikirim ke Jakarta Pusat</span>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Kategori Populer</h2>
+
+            <div class="content">
+                <div class="banner">
+                    <img src="gambar/tokopediafotokatrgori.png" alt="">
+                </div>
+
+                <div class="topup">
+                    <div class="title">
+                        <h3>Top Up & Tagihan</h3>
+
+                        <a href="#">Lihat Semua</a>
+                    </div>
+
+                    <div class="menu">
+                        <button class="active">Pulsa</button>
+                        <button>Paket Data</button>
+                        <button>Listrik PLN</button>
+                        <button>Roaming</button>
+                    </div>
+
+                    <div class="form">
+                        <div class="beli-pulsa">
+                            <label for="tel">Nomor </label>
+                            <input type="tel" id="tel">
+                        </div>
+                        <div class="beli-pulsa">
+                            <label for="">Nominal</label>
+
+                            <select name="" id="">
+                                <option value="" selected disabled>pilih</option>
+                                <option value="5.000">5.000</option>
+                            </select>
+                        </div>
+                        <div class="beli-pulsa">
+                            <button>Beli</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="categories">
+                <div class="item">
+                    <i class="fa-solid fa-table-cells-large"></i>
+                    Kategori
+                </div>
+
+                <div class="item">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    Handphone & Tablet
+                </div>
+
+                <div class="item">
+                    <i class="fa-solid fa-file-invoice"></i>
+                    Top-Up & Tagihan
+                </div>
+
+                <div class="item">
+                    <i class="fa-solid fa-headphones"></i>
+                    Elektronik
+                </div>
+
+                <div class="item">
+                    <i class="fa-solid fa-paw"></i>
+                    Perawatan Hewan
+                </div>
+
+                <div class="item">
+                    <i class="fa-solid fa-wallet"></i>
+                    Keuangan
+                </div>
+
+                <div class="item">
+                    <i class="fa-solid fa-laptop"></i>
+                    Komputer & Laptop
+                </div>
+            </div>
+        </div>
+
+        <section class="produk-section">
+            <div class="menu-wrapper">
+                <div class="produk-menu" id="produkMenu">
+                    <button class="active">For You</button>
+                    <button>Weekend</button>
+                    <button>Mall</button>
+                    <button>Elektronil</button>
+                    <button>Handphone & Gadged</button>
+                    <button>Fashion</button>
+                    <button>Otomotif</button>
+                    <button>Kebutuhan Harian</button>
+                    <button>Rumah Tangga</button>
+                    <button>Lifestyle</button>
+                    <button>Olahraga</button>
+                    <button>Kecantikan</button>
+                </div>
+
+                <button class="geser-kanan" onclick="geserKanan()">❯</button>
+            </div>
+
+            <div class="produk-list">
+                <article class="produk-card">
+                    <div class="produk-gambar">
+                        <span class="diskon">25%</span>
+
+                        <img src="produk/jamtangankeren.webp" alt="">
+                    </div>
+
+                    <h3>Jam Tangan</h3>
+
+                    <div class="harga-produk">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Rp299.000
+                    </div>
+
+                    <p class="bonus">Hemat s.d 5% Pakai Bonus</p>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        5.0 · 4rb+ terjual
+                    </div>
+
+                    <div class="toko">
+                        <i class="fa-solid fa-store"></i>
+
+                        <div class="toko-dan-lokasi-produk">
+                            <span class="nama-toko">Indonesia Store</span>
+                            <span class="lokasi-produk">Kota Surabaya</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="produk-card">
+                    <div class="produk-gambar">
+                        <span class="diskon">25%</span>
+
+                        <img src="produk/headsetcool.webp" alt="">
+                    </div>
+
+                    <h3>Headphone</h3>
+
+                    <div class="harga-produk">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Rp299.000
+                    </div>
+
+                    <p class="bonus">Hemat s.d 5% Pakai Bonus</p>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        5.0 · 4rb+ terjual
+                    </div>
+
+                    <div class="toko">
+                        <i class="fa-solid fa-store"></i>
+
+                        <div class="toko-dan-lokasi-produk">
+                            <span class="nama-toko">Indonesia Store</span>
+                            <span class="lokasi-produk">Kota Surabaya</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="produk-card">
+                    <div class="produk-gambar">
+                        <span class="diskon">25%</span>
+
+                        <img src="produk/kacamataduamerahhitam.webp" alt="">
+                    </div>
+
+                    <h3>Kacamata</h3>
+
+                    <div class="harga-produk">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Rp299.000
+                    </div>
+
+                    <p class="bonus">Hemat s.d 5% Pakai Bonus</p>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        5.0 · 4rb+ terjual
+                    </div>
+
+                    <div class="toko">
+                        <i class="fa-solid fa-store"></i>
+
+                        <div class="toko-dan-lokasi-produk">
+                            <span class="nama-toko">Indonesia Store</span>
+                            <span class="lokasi-produk">Kota Surabaya</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="produk-card">
+                    <div class="produk-gambar">
+                        <span class="diskon">25%</span>
+
+                        <img src="produk/kameramodern.webp" alt="">
+                    </div>
+
+                    <h3>Kamera</h3>
+
+                    <div class="harga-produk">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Rp299.000
+                    </div>
+
+                    <p class="bonus">Hemat s.d 5% Pakai Bonus</p>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        5.0 · 4rb+ terjual
+                    </div>
+
+                    <div class="toko">
+                        <i class="fa-solid fa-store"></i>
+
+                        <div class="toko-dan-lokasi-produk">
+                            <span class="nama-toko">Indonesia Store</span>
+                            <span class="lokasi-produk">Kota Surabaya</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="produk-card">
+                    <div class="produk-gambar">
+                        <span class="diskon">25%</span>
+
+                        <img src="produk/keyboardwanitacantik.webp" alt="">
+                    </div>
+
+                    <h3>Keyboard</h3>
+
+                    <div class="harga-produk">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Rp299.000
+                    </div>
+
+                    <p class="bonus">Hemat s.d 5% Pakai Bonus</p>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        5.0 · 4rb+ terjual
+                    </div>
+
+                    <div class="toko">
+                        <i class="fa-solid fa-store"></i>
+
+                        <div class="toko-dan-lokasi-produk">
+                            <span class="nama-toko">Indonesia Store</span>
+                            <span class="lokasi-produk">Kota Surabaya</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="produk-card">
+                    <div class="produk-gambar">
+                        <span class="diskon">25%</span>
+
+                        <img src="produk/laptoplenovoterbaru.webp" alt="">
+                    </div>
+
+                    <h3>laptop</h3>
+
+                    <div class="harga-produk">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Rp299.000
+                    </div>
+
+                    <p class="bonus">Hemat s.d 5% Pakai Bonus</p>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        5.0 · 4rb+ terjual
+                    </div>
+
+                    <div class="toko">
+                        <i class="fa-solid fa-store"></i>
+
+                        <div class="toko-dan-lokasi-produk">
+                            <span class="nama-toko">Indonesia Store</span>
+                            <span class="lokasi-produk">Kota Surabaya</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="produk-card">
+                    <div class="produk-gambar">
+                        <span class="diskon">25%</span>
+
+                        <img src="produk/lipstikvanila.webp" alt="">
+                    </div>
+
+                    <h3>Lipstik</h3>
+
+                    <div class="harga-produk">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Rp299.000
+                    </div>
+
+                    <p class="bonus">Hemat s.d 5% Pakai Bonus</p>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        5.0 · 4rb+ terjual
+                    </div>
+
+                    <div class="toko">
+                        <i class="fa-solid fa-store"></i>
+
+                        <div class="toko-dan-lokasi-produk">
+                            <span class="nama-toko">Indonesia Store</span>
+                            <span class="lokasi-produk">Kota Surabaya</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="produk-card">
+                    <div class="produk-gambar">
+                        <span class="diskon">25%</span>
+
+                        <img src="produk/parfumpink.webp" alt="">
+                    </div>
+
+                    <h3>Parfum</h3>
+
+                    <div class="harga-produk">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Rp299.000
+                    </div>
+
+                    <p class="bonus">Hemat s.d 5% Pakai Bonus</p>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        5.0 · 4rb+ terjual
+                    </div>
+
+                    <div class="toko">
+                        <i class="fa-solid fa-store"></i>
+
+                        <div class="toko-dan-lokasi-produk">
+                            <span class="nama-toko">Indonesia Store</span>
+                            <span class="lokasi-produk">Kota Surabaya</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="produk-card">
+                    <div class="produk-gambar">
+                        <span class="diskon">25%</span>
+
+                        <img src="produk/sepatucoklat.webp" alt="">
+                    </div>
+
+                    <h3>Sepatu</h3>
+
+                    <div class="harga-produk">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Rp299.000
+                    </div>
+
+                    <p class="bonus">Hemat s.d 5% Pakai Bonus</p>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        5.0 · 4rb+ terjual
+                    </div>
+
+                    <div class="toko">
+                        <i class="fa-solid fa-store"></i>
+
+                        <div class="toko-dan-lokasi-produk">
+                            <span class="nama-toko">Indonesia Store</span>
+                            <span class="lokasi-produk">Kota Surabaya</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="produk-card">
+                    <div class="produk-gambar">
+                        <span class="diskon">25%</span>
+
+                        <img src="produk/smartphoneblackiphone.webp" alt="">
+                    </div>
+
+                    <h3>Smartphone</h3>
+
+                    <div class="harga-produk">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Rp299.000
+                    </div>
+
+                    <p class="bonus">Hemat s.d 5% Pakai Bonus</p>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        5.0 · 4rb+ terjual
+                    </div>
+
+                    <div class="toko">
+                        <i class="fa-solid fa-store"></i>
+
+                        <div class="toko-dan-lokasi-produk">
+                            <span class="nama-toko">Indonesia Store</span>
+                            <span class="lokasi-produk">Kota Surabaya</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="produk-card">
+                    <div class="produk-gambar">
+                        <span class="diskon">25%</span>
+
+                        <img src="produk/smartwhachgrey.webp" alt="">
+                    </div>
+
+                    <h3>Smartwatch</h3>
+
+                    <div class="harga-produk">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Rp299.000
+                    </div>
+
+                    <p class="bonus">Hemat s.d 5% Pakai Bonus</p>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        5.0 · 4rb+ terjual
+                    </div>
+
+                    <div class="toko">
+                        <i class="fa-solid fa-store"></i>
+
+                        <div class="toko-dan-lokasi-produk">
+                            <span class="nama-toko">Indonesia Store</span>
+                            <span class="lokasi-produk">Kota Surabaya</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="produk-card">
+                    <div class="produk-gambar">
+                        <span class="diskon">25%</span>
+
+                        <img src="produk/tasbroen.webp" alt="">
+                    </div>
+
+                    <h3>Tas</h3>
+
+                    <div class="harga-produk">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Rp299.000
+                    </div>
+
+                    <p class="bonus">Hemat s.d 5% Pakai Bonus</p>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        5.0 · 4rb+ terjual
+                    </div>
+
+                    <p class="toko">
+                        <i class="fa-solid fa-store"></i>
+                        Indonesia Store
+
+                    </p>
+                </article>
+
+            </div>
+
+            <div class="produk-lainnya">
+                <button>Muat Lebih Banyak</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Shop</h3>
+
+                <a href="#">Tentang Shop</a>
+                <a href="#">Hak Kekayaan Intelektual</a>
+                <a href="#">Karir</a>
+                <a href="#">Blog</a>
+                <a href="#">Shop Affiliate Program</a>
+                <a href="#">Shop B2B Digital</a>
+                <a href="#">Shop Marketing Solutions</a>
+                <a href="#">Kalkulator Indeks Masa Tubuh</a>
+                <a href="#">Shop Farma</a>
+                <a href="#">Promo Hari Ini</a>
+                <a href="#">Beli Lokal</a>
+                <a href="#">Promo Guncang</a>
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Beli</h3>
+
+                <a href="#">Tagihan & Top Up</a>
+                <a href="#">Shop COD</a>
+                <a href="#">Bebas Ongkir</a>
+
+                <h3 class="space-top">Jual</h3>
+
+                <a href="#">Pusat Edukasi Seller</a>
+                <a href="#">Daftar Mall</a>
+
+                <h3 class="space-top">Bantuan dan Panduan</h3>
+
+                <a href="#">Shop Care</a>
+                <a href="#">Syarat dan Ketentuan</a>
+                <a href="#">Kebijakan Privasi</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Keamanan & Privasi</h3>
+
+                <a href="#">Keamanan Akun</a>
+                <a href="#">Waspada Penipuan</a>
+                <a href="#">Cookie</a>
+
+                <h3 class="space-top">Ikuti Kami</h3>
+
+                <div class="sosial-media">
+                    <a href="https://facebook.com" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://twitter.com" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a href="https://pinterest.com" target="_blank">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
+
+                    <a href="https://instagram.com" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-column app-column">
+
+                <h3>Nikmatin keuntungan spesial di aplikasi:</h3>
+
+                <div class="promo">
+                    <i class="fa-solid fa-tags"></i>
+                    <span>Diskon 70%* hanya di aplikasi</span>
+                </div>
+
+                <div class="promo">
+                    <i class="fa-solid fa-gift"></i>
+                    <span>Promo khusus aplikasi</span>
+                </div>
+
+                <div class="promo">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <span>Gratis Ongkir tiap hari</span>
+                </div>
+
+                <p style="margin-top: 22px;">Buka aplikasi dengan klik:</p>
+
+                <a class="learn-more" href="#">
+                    Pelajari Selengkapnya →
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-button">
+            <p>© 2009 - 2026, PT. Shop. All Rights Reserved.</p>
+
+            <div class="leanguage">
+                <button>Indonesia</button>
+                <button>English</button>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        // menghilangkan active
+
+
+        const buttons = document.querySelectorAll(".menu button");
+
+        buttons.forEach(button => {
+            button.addEventListener("click", () => {
+                document.querySelector(".active").classList.remove("active");
+                button.classList.add("active");
+            });
+        });
+
+
+        // buat tombol navigasi menyala
+
+        const menu = document.querySelectorAll(".produk-menu button");
+
+        menu.forEach(link => {
+            link.addEventListener("click", function () {
+                menu.forEach(item => item.classList.remove("active"));
+                this.classList.add("active");
+            });
+        });
+
+
+        // tombol geser kekanan dinavigasi
+
+        function geserKanan() {
+            document.getElementById("produkMenu").scrollBy({
+                left: 150,
+                behavior: "smooth"
+            });
+        }
+    </script>
+</body>
+
+</html>

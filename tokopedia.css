@@ -1,0 +1,639 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #e6e3e3;
+    border-radius: 10px 10px 0 0;
+}
+
+
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 35px;
+}
+
+.top-right {
+    display: flex;
+}
+
+
+.top-right a {
+    color: rgb(134, 134, 134);
+    text-decoration: none;
+}
+
+.top-right a:hover {
+    color: rgb(8, 184, 8);
+}
+
+.top-right,
+.top-left {
+    display: flex;
+    gap: 15px;
+}
+
+.top-left {
+    padding: 8px 10px;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+.top-left:hover {
+    background-color: #0bdb51;
+    color: white;
+}
+
+.min-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #ffffff;
+    padding: 15px 45px;
+}
+
+.logo h1 {
+    color: #19ac31;
+}
+
+.searchbar {
+    display: flex;
+    flex: 1;
+    border: 1px solid black;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 8px;
+}
+
+.searchbar input {
+    outline: none;
+    border: none;
+    width: 100%;
+
+}
+
+.icon-menu {
+    font-size: 20px;
+}
+
+.auth {
+    display: flex;
+    gap: 8px;
+}
+
+.auth button {
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #19ac31;
+    padding: 7px 10px;
+}
+
+.auth button:first-child {
+    color: rgb(10, 204, 42);
+}
+
+.auth button:last-child {
+    background-color: rgb(10, 204, 42);
+    color: white;
+}
+
+.bottom-header {
+    background-color: #ffffff;
+    padding: 0 0 10px 45px;
+}
+
+
+
+.container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.content {
+    display: flex;
+    gap: 16px;
+    align-items: stretch;
+}
+
+.banner {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.topup {
+    flex: 1;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.title a {
+    text-decoration: none;
+    color: rgb(57, 177, 93);
+}
+
+.menu {
+    display: flex;
+    margin-bottom: 15px;
+    background: none;
+    border-bottom: 1px solid black;
+}
+
+.menu button {
+    flex: 1;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 15px;
+    border-bottom: 5px solid transparent;
+}
+
+.menu button:hover {
+    border-bottom: 5px solid rgb(211, 211, 211);
+}
+
+.menu button.active {
+    border-bottom: 5px solid rgb(35, 168, 90);
+}
+
+.menu button:focus {
+    border-bottom: none;
+    border-bottom: 5px solid rgb(35, 168, 90);
+
+}
+
+.form {
+    display: flex;
+    align-items: end;
+    gap: 20px;
+}
+
+.beli-pulsa {
+    display: flex;
+    flex-direction: column;
+}
+
+.beli-pulsa:first-child {
+    flex: 2;
+}
+
+.beli-pulsa:nth-child(2) {
+    flex: 1;
+}
+
+.beli-pulsa input,
+.beli-pulsa select {
+    width: 100%;
+    height: 40px;
+}
+
+.beli-pulsa button {
+    height: 40px;
+    padding: 0 20px;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 15px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid black;
+    padding: 8px 15px;
+    border-radius: 30px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.item:hover {
+    background-color: #1fa046;
+    color: white;
+    border: 1px solid #1ad653;
+}
+
+
+
+
+.produk-section {
+    background-color: #fff;
+    width: 100%;
+    padding: 20px 28px;
+    border-bottom: 2px solid rgb(187, 187, 187);
+}
+
+.menu-wrapper {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+
+
+.produk-menu {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.produk-menu button {
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.produk-menu button.active {
+    border-bottom: 2px solid rgb(8, 255, 8);
+    color: #0bdb51;
+}
+
+.produk-menu button:focus {
+    border-bottom: 2px solid rgb(8, 255, 8);
+    color: #0bdb51;
+
+}
+
+.produk-menu button:hover {
+    color: rgb(46, 180, 102);
+    border-bottom: 2px solid grey;
+}
+
+.produk-menu::-webkit-scrollbar {
+    display: none;
+}
+
+.geser-kanan {
+    display: none;
+}
+
+
+.produk-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.produk-card {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.produk-card:hover .nama-toko {
+    display: none;
+}
+
+.produk-card:hover .lokasi-produk {
+    display: inline;
+    transition: 0.5s;
+}
+
+
+.produk-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+
+.produk-gambar {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.produk-gambar img:hover {
+    transform: scale(1.05);
+}
+
+.diskon {
+    position: absolute;
+
+    top: 8px;
+    left: -4px;
+
+    z-index: 2;
+
+    padding: 7px 9px;
+
+    border-radius: 5px;
+
+    background-color: #f94d63;
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+.harga-produk {
+    background-color: rgba(255, 0, 0, 0.116);
+    color: red;
+    border: 1px solid rgb(228, 38, 38);
+    border-radius: 8px;
+    display: inline-flex;
+    width: fit-content;
+    padding: 0 10px 0 0;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.harga-produk .fa-cart-shopping {
+    background-color: rgba(255, 0, 0, 0.521);
+    color: whitesmoke;
+    padding: 3px 7px;
+    border-radius: 6px;
+}
+
+.produk-card .bonus {
+    color: rgb(247, 162, 4);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.rating {
+    font-size: 14px;
+}
+
+.rating .fa-star {
+    color: rgb(247, 247, 57);
+}
+
+.toko {
+    display: flex;
+    font-size: 15px;
+    gap: 12px;
+}
+
+.toko .fa-store {
+    color: green;
+}
+
+.toko-dan-lokasi-produk .lokasi-produk {
+    display: none;
+}
+
+.produk-lainnya {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.produk-lainnya button {
+
+    font-size: 20px;
+    background: none;
+    border: 1px solid rgb(20, 187, 20);
+    padding: 7px 10px;
+    border-radius: 8px;
+    color: rgb(42, 219, 42);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.produk-lainnya button:hover {
+    background-color: rgb(3, 175, 3);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: #fff;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-container {
+    display: flex;
+    padding-inline: 17px;
+    margin-bottom: 70px;
+    gap: 20px;
+}
+
+.footer-column {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.footer-column h3 {
+    margin-top: 22px;
+}
+
+.footer-column a:hover {
+    color: rgb(1, 153, 1);
+    cursor: pointer;
+}
+
+.footer-column a.learn-more {
+    color: rgb(1, 153, 1);
+}
+
+.fa-facebook-f {
+    background-color: #1b5db4;
+    color: white;
+    padding: 6px 9px;
+    border-radius: 100%;
+    font-size: 13px;
+}
+
+.fa-twitter {
+    background-color: #20c0c0;
+    color: white;
+    padding: 6px 7px;
+    border-radius: 100%;
+    font-size: 13px;
+}
+
+.fa-pinterest-p {
+    background-color: #e22424;
+    color: white;
+    padding: 6px 9px;
+    border-radius: 100%;
+    font-size: 13px;
+}
+
+.fa-instagram {
+    background-color: #e94848;
+    color: white;
+    padding: 6px 8px;
+    border-radius: 100%;
+    font-size: 13px;
+}
+
+.promo i {
+    color: rgb(5, 175, 5);
+}
+
+.footer-button {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    padding: 20px 60px;
+    align-items: center;
+}
+
+.footer-button p {
+    font-size: 12px;
+}
+
+.leanguage {
+    display: flex;
+}
+
+.leanguage :first-child {
+    background: none;
+    border: none;
+    border-radius: 9px 0 0 9px;
+    padding: 8px 13px;
+    background-color: rgb(21, 192, 21);
+    color: white;
+}
+
+.leanguage :nth-child(2) {
+    background: none;
+    border: none;
+    border-radius: 0 9px 9px 0;
+    padding: 8px 13px;
+    background-color: rgb(161, 161, 161);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .top-header,
+    .logo,
+    .kategori,
+    .auth,
+    .bottom-header {
+        display: none;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .banner,
+    .topup {
+        width: 100%;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .menu button {
+        flex: 1 1 45%;
+    }
+
+    .form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .form button {
+        width: 100%;
+    }
+
+    .container h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .geser-kanan {
+        display: block;
+        margin-left: 10px;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .produk-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .produk-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
