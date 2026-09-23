@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="top-header">
             <div class="top-left">
                 <i class="fa-solid fa-mobile-screen-button"></i>
@@ -37,7 +37,7 @@
             <div class="searchbar">
                 <i class="fa-solid fa-magnifying-glass"></i>
 
-                <input type="text" placeholder="Cari Produk">
+                <input type="text" id="searchInput" placeholder="Cari Produk">
             </div>
 
             <div class="icon-menu">
@@ -92,11 +92,11 @@
                             <input type="tel" id="tel">
                         </div>
                         <div class="beli-pulsa">
-                            <label for="">Nominal</label>
+                            <label>Nominal</label>
 
-                            <select name="" id="">
+                            <select>
                                 <option value="" selected disabled>pilih</option>
-                                <option value="5.000">5.000</option>
+                                <option value="5000">5.000</option>
                             </select>
                         </div>
                         <div class="beli-pulsa">
@@ -165,7 +165,7 @@
                 <button class="geser-kanan" onclick="geserKanan()">❯</button>
             </div>
 
-            <div class="produk-list">
+            <div class="produk-list" id="produkList">
                 <article class="produk-card">
                     <div class="produk-gambar">
                         <span class="diskon">25%</span>
@@ -649,6 +649,32 @@
     </footer>
 
     <script>
+
+        // FILTER PRODUK 
+
+        const searchInput = document.querySelector("#searchInput");
+        const produkCard = document.querySelectorAll(".produk-card");
+
+        searchInput.addEventListener("input", function () {
+
+            const kataKunci = searchInput.value.toLowerCase();
+
+            produkCard.forEach(function (card) {
+
+                const namaProduk = card
+                    .querySelector("h3")
+                    .textContent
+                    .toLowerCase();
+
+                if (namaProduk.includes(kataKunci)) {
+                    card.style.display = "flex";
+                } else {
+                    card.style.display = "none";
+                }
+
+            });
+
+        });
 
         // menghilangkan active
 

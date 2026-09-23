@@ -11,15 +11,26 @@ body {
 }
 
 
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 1px 11px gray;
+}
+
+
 
 .top-header {
     display: flex;
     justify-content: space-between;
     padding-inline: 35px;
+    background: whitesmoke;
 }
 
 .top-right {
     display: flex;
+    align-items: center;
 }
 
 
@@ -57,6 +68,10 @@ body {
     padding: 15px 45px;
 }
 
+main {
+    margin-top: 150px;
+}
+
 .logo h1 {
     color: #19ac31;
 }
@@ -71,15 +86,16 @@ body {
     border-radius: 8px;
 }
 
-.searchbar input {
+.searchbar #searchInput {
     outline: none;
     border: none;
     width: 100%;
 
 }
 
-.icon-menu {
+.fa-cart-shopping {
     font-size: 20px;
+    cursor: pointer;
 }
 
 .auth {
@@ -585,6 +601,10 @@ body {
     .auth,
     .bottom-header {
         display: none;
+    }
+
+    main {
+        margin-top: 80px;
     }
 
     .content {
